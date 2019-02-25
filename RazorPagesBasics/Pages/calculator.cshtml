@@ -1,0 +1,28 @@
+﻿@page
+@model RazorPagesBasics.Pages.calculatorModel
+@{
+    ViewData["Title"] = "calculator";
+}
+<div class="text-center">
+    <h1>Calculator</h1>
+    <br />
+    <h3>A simple Calculator using Properties and Model Binding</h3>
+    <form method="post">
+        <p>
+            <br /><br />
+            Enter a number: <input asp-for="num1" value=3 /><br /><br />
+            Enter a number: <input asp-for="num2" value=5 /><br />
+        </p>
+        <p>
+            <input type="submit" asp-page-handler="Add" value="Add" />
+            <input type="submit" asp-page-handler="Subtract" value="Subtract" />
+            <input type="submit" asp-page-handler="Multiply" value="Multiply" />
+            <input type="submit" asp-page-handler="Divide" value="Divide" />
+        </p>
+        <p>
+            <strong>@Model.ans</strong>
+        </p>
+    </form>
+</div>
+
+

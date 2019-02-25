@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "wwwroot/css/superhero.min.min.css",
+    "inputFiles": [
+      "wwwroot/css/superhero.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/superhero.min.css",
+    "inputFiles": [
+      "wwwroot/css/superhero.css"
+    ]
+  }
+]

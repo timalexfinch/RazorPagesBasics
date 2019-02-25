@@ -1,0 +1,26 @@
+﻿@page
+@model RazorPagesBasics.Pages.sayHelloModel
+@{
+    ViewData["Title"] = "sayHello";
+}
+<div class="text-center">
+    <h1>Say Hello</h1>
+    <br />
+    <div>
+        <form method="post">
+            <p>
+                First Name: <input asp-for="firstName" value="tim" /><br /><br />
+                Last Name:  <input asp-for="lastName" value="finch" /><br /><br />
+            </p>
+            <p><input type="submit" /></p>
+        </form>
+
+        @if ((!string.IsNullOrEmpty(Model.firstName)) &&
+                        (!string.IsNullOrEmpty(Model.lastName)))
+        {
+            <h2> Hello @Model.firstName @Model.lastName !</h2>;
+        }
+    </div>
+</div>
+
+
